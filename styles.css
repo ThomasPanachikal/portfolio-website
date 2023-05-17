@@ -31,25 +31,12 @@ time, mark, audio, video {
     --nav-bar-height:4.8rem;
 }
 
-/* Styles for mobile screens */
-@media (max-width: 767px) {
-    :root{
-        /* font-size: 25px; */
-    }
-    html{
-        background-color: black;
-        scroll-behavior: smooth; 
-        color: white;    
-    }
-  }
-
 /* Styles for desktop screens */
 @media screen and (min-width: 480px) {
     :root{
-        font-size: 100px;
+        font-size: 62.5%;
     }
     html{
-        /* font-size: 62.5%; */
         background-color: black;
         scroll-behavior: smooth; 
         color: white;    
