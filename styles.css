@@ -5,22 +5,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	/* font-size: 100%; */
-	font: inherit;
-	vertical-align: baseline;
-} 
-
-*{
+dl, dt, dd, ol, u*{
     box-sizing: border-box;   
     margin: 0;
     padding: 0; 
@@ -43,12 +28,12 @@ time, mark, audio, video {
     }
   }
 
-
-
 body{
     width: 100vw;
     height: 400vh;
 }
+
+
 /* General Stylings*/
 .webpage{
     width: 100vw;
@@ -63,7 +48,7 @@ body{
 }
 
 
-/* Navigation Bar */
+/* NAVIGATION BAR */
 nav{
     height: var(--nav-bar-height);
     width: 100%;
@@ -107,13 +92,13 @@ nav a{
 }
 
 
-/* Home Page */
+/* HOME PAGE */
 #home{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80') black;
+    background: url('https://cdn.pixabay.com/photo/2020/04/08/16/32/keyboard-5017973_960_720.jpg') black;
     background-repeat: no-repeat;
     filter: grayscale(1);
     background-position: center;
@@ -144,14 +129,12 @@ nav a{
 
 .role-container{
     width: 100%;
-    margin-top: 3rem;
-    margin-left: -5rem;
-    font-family:'DM Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 2rem;
     text-align: center;
-    z-index: 1;
-    transform: rotate(11.5deg);
+    bottom: 9rem;
 } 
+
 
 /* About Page */
 .title-about{
@@ -206,11 +189,14 @@ nav a{
         filter: grayscale(1);
         border-radius: 1.7rem;
     }
+
+    
 /* Portfolio Page */
 #portfolio{
     height: 100vh;
     width: 100%;
 }
+
 .title-portfolio{
     text-align: left;
     margin-top: 2.4rem;
@@ -291,12 +277,14 @@ nav a{
                 justify-content: center;
                 gap: 4.8rem;
             }
+
             .project-links div {
                 display: flex;
                 gap: .6rem;
                 justify-content: center;
                 align-items: center;
             }
+
                 .project-links-icon{
                     height: auto;
                     width: 2vw;
@@ -312,6 +300,7 @@ nav a{
             .project-links div:hover{
                 border-bottom: .1rem solid white;
             }
+
 
 /* Contact Page */
 #contact{
@@ -344,16 +333,18 @@ nav a{
         font-weight: 100;
         font-size: 2.4rem;
     }
+
     .contact-content h3 span{
         font-family: 'Monoton', sans-serif;
         font-size: 5rem;
-        /* font-weight:700; */
     }
+
     .contact-content address{
         font-family: 'Montserrat', sans-serif;
         font-size: 1.03rem;
         line-height: 2.4rem
     }
+
 .contact-content-container button{
     background-color: black;
     width: 80%;
@@ -371,6 +362,3 @@ nav a{
 .contact-content-container button a:hover{
     text-decoration: underline;
 }
-
-            
-   
