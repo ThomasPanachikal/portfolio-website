@@ -262,14 +262,30 @@ nav a:hover {
     border-radius: 1.7rem;
     /* box-shadow: rgba(255, 255, 255, 0.35) 0rem 0rem 2.5rem; */
     border: 0.1px solid rgba(255, 255, 255, 0.15);
-    overflow-y: hidden;
+    overflow: hidden;
     object-fit: contain;
+    position: relative;
+    display: block;
 }
 
 .project-view-portal>img {
     max-width: 100%;
     height: auto;
     object-fit: scale-down;
+    position: absolute;
+    bottom: -850px;
+    z-index: 0;
+    margin:0;
+    padding:0;
+}
+
+.project-view-portal:hover .project-preview{
+    bottom: 0;
+    -webkit-transition: all 9s;
+    -moz-transition: all 9s;
+    -ms-transition: all 9s;
+    -o-transition: all 9s;
+    transition: all 9s;
 }
 
 .project-overview-container {
@@ -310,7 +326,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 2.4rem;
-    padding-top: 0.2rem;
+    margin-top: .1rem;
 }
 
 .project-links div {
